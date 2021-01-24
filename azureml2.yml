@@ -1,0 +1,24 @@
+# Conda environment specification.
+# Details about the Conda environment file format:
+# https://conda.io/docs/user-guide/tasks/manage-environments.html#create-env-file-manually
+
+name: azureml-env
+dependencies:
+  # The python interpreter version.
+  # Currently Azure ML only supports 3.5.2 and later.
+- python=3.6.5
+- numpy
+- pandas
+- matplotlib
+- scikit-learn
+- jupyter
+- pip
+- pip:
+    # Required packages for AzureML execution, history, and data preparation.
+  - azureml
+  - azureml-defaults
+  - azureml-train-automl
+  - azureml-automl-core
+  - azureml-widgets
+channels:
+- conda-forge
