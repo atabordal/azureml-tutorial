@@ -70,7 +70,6 @@ run.log('data_dir', data_folder)
 run.log('accuracy', np.float(acc))
 
 os.makedirs('outputs', exist_ok=True)
-
 # note file saved in the outputs folder is automatically uploaded into experiment record
 joblib.dump(value=clf, filename='outputs/diabetes_model.pkl')
 X_validate.to_json('outputs/validation_data.json', orient="split")
