@@ -1,6 +1,6 @@
 # azureml-tutorial
 
-This project is a guided tutorial on how to train and deploy machine learning models in Azure from a local county environment.
+This project is a guided tutorial on how to train and deploy machine learning models in Azure from a local to could environment.
 1. Create the environment `conda env create -f azureml.yml` and next `conda activate azureml`
 2. Run the notebook diabetes/Train in local.ipynb
 3. Follow the notebook diabetes/Train on Azure.ipynb
